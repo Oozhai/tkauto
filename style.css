@@ -1,73 +1,115 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 body {
   line-height: 1.6;
-  color: #222;
+  color: #e5e5e5;
+  background: #0d0d0d;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 2rem;
-  background: #ff0050; /* solid TikTok pink */
-  color: white;
+  background: #111;
+  color: #fff;
 }
 
-hite;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
+header p {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+/* Hero */
 .hero img {
   width: 100%;
   height: auto;
   display: block;
+  border-bottom: 4px solid #222;
 }
 
+/* Sections */
 .about, .features, .cta {
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
+.about h2, .features h2, .cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.about p, .features p, .cta p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #bbb;
+}
+
+/* Feature Cards */
 .features .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .card {
-  background: #f9f9f9;
+  background: #1a1a1a;
   border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
+.card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Call to Action */
 .cta button {
-  padding: 0.7rem 1.5rem;
+  padding: 0.8rem 2rem;
   border: none;
   border-radius: 5px;
-  background: #ff0050;
-  color: white;
-  cursor: pointer;
+  background: #222;
+  color: #fff;
   font-size: 1rem;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1.5rem;
 }
 
 .cta button:hover {
-  background: #cc0040;
+  background: #444;
 }
 
+/* Footer */
 footer {
   background: #111;
-  color: #aaa;
+  color: #777;
   text-align: center;
   padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
 }
