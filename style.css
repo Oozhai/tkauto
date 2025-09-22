@@ -13,8 +13,11 @@ body {
 header {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #ff0050, #000000);
+  background: #ff0050; /* solid TikTok pink */
   color: white;
+}
+
+hite;
 }
 
 .hero img {
